@@ -46,11 +46,11 @@ export const AppRoutingConstant = [
     loadChildren: "./adt/adt.module#ADTModule",
     data: { currentRoute: "ADTMain" }
   },
-  {
-    path: "Settings",
-    loadChildren: "./settings-new/settings.module#SettingsModule",
-    canActivate: [AuthGuardService],
-  },
+  // {
+  //   path: "Settings",
+  //   loadChildren: "./settings-new/settings.module#SettingsModule",
+  //   canActivate: [AuthGuardService],
+  // },
   {
     path: "Reports",
     loadChildren: "./reporting/reporting.module#ReportingModule",
@@ -71,16 +71,16 @@ export const AppRoutingConstant = [
     path: "Accounting",
     loadChildren: "./accounting/accounting.module#AccountingModule",
   },
-  {
-    path: "SystemAdmin",
-    loadChildren: "./system-admin/system-admin.module#SystemAdminModule",
-    canActivate: [AuthGuardService],
-  },
-  {
-    path: "Pharmacy",
-    loadChildren: "./pharmacy/pharmacy.module#PharmacyModule",
-    canActivate: [AuthGuardService],
-  },
+  // {
+  //   path: "SystemAdmin",
+  //   loadChildren: "./system-admin/system-admin.module#SystemAdminModule",
+  //   canActivate: [AuthGuardService],
+  // },
+  // {
+  //   path: "Pharmacy",
+  //   loadChildren: "./pharmacy/pharmacy.module#PharmacyModule",
+  //   canActivate: [AuthGuardService],
+  // },
   {
     path: "Nursing",
     loadChildren: "./nursing/nursing.module#NursingModule",
@@ -103,24 +103,24 @@ export const AppRoutingConstant = [
     path: "Emergency",
     loadChildren: "./emergency/emergency.module#EmergencyModule",
   },
-  {
-    path: "Incentive",
-    loadChildren: "./incentive/incentive.module#IncentiveModule",
-    canActivate: [AuthGuardService],
-  },
-  {
-    path: "Medical-records",
-    loadChildren:
-      "./medical-records/medical-records.module#MedicalRecordsModule",
-  },
+  // {
+  //   path: "Incentive",
+  //   loadChildren: "./incentive/incentive.module#IncentiveModule",
+  //   canActivate: [AuthGuardService],
+  // },
+  // {
+  //   path: "Medical-records",
+  //   loadChildren:
+  //     "./medical-records/medical-records.module#MedicalRecordsModule",
+  // },
   {
     path: "PayrollMain",
     loadChildren: "./payroll-module/payroll-main.module#PayrollMainModule",
   },
-  {
-    path: "Verification",
-    loadChildren: "./verification/verification.module#VerificationModule",
-  },
+  // {
+  //   path: "Verification",
+  //   loadChildren: "./verification/verification.module#VerificationModule",
+  // },
   {
     path: "OperationTheatre",
     loadChildren: "./ot-module/ot.module#OperationTheatreModule",
@@ -138,22 +138,22 @@ export const AppRoutingConstant = [
     loadChildren: './insurance/nep-gov/gov-insurance.module#GovInsuranceModule',
     canActivate: [AuthGuardService]
   },
-  {
-    path: "FixedAssets",
-    loadChildren: "./fixed-asset/fixed-assets.module#FixedAssetsModule",
-    data: { currentRoute: "FixedAssets" },
-  },
+  // {
+  //   path: "FixedAssets",
+  //   loadChildren: "./fixed-asset/fixed-assets.module#FixedAssetsModule",
+  //   data: { currentRoute: "FixedAssets" },
+  // },
   {
     path: "ProcurementMain",
     loadChildren: "./procurement/procurement.module#ProcurementModule",
     canActivate: [AuthGuardService],
     data: { currentRoute: "ProcurementMain" },
   },
-  {
-    path: "CSSD",
-    loadChildren: "./cssd/cssd.module#CssdModule",
-    canActivate: [AuthGuardService],
-  },
+  // {
+  //   path: "CSSD",
+  //   loadChildren: "./cssd/cssd.module#CssdModule",
+  //   canActivate: [AuthGuardService],
+  // },
   { path: "ActivateInventory", component: ActivateInventoryComponent },
   {
     path: "Maternity",
@@ -171,16 +171,16 @@ export const AppRoutingConstant = [
       "./queue-management/queue-management.module#QueueManagementModule",
     canActivate: [AuthGuardService],
   },
-  {
-    path: "ClaimManagement",
-    loadChildren:
-      "./claim-management/claim-management.module#ClaimManagementModule"
-    , canActivate: [AuthGuardService]
-  },
+  // {
+  //   path: "ClaimManagement",
+  //   loadChildren:
+  //     "./claim-management/claim-management.module#ClaimManagementModule"
+  //   , canActivate: [AuthGuardService]
+  // },
   { path: "DynamicReport", component: DynamicReportComponent },
   { path: "UnAuthorized", component: UnAuthorizedAccessComponent },
   { path: "Utilities", loadChildren: "./utilities/utilities.module#UtilitiesModule", canActivate: [AuthGuardService], data: { currentRoute: 'Utilities' } },
-  { path: "MktReferral", loadChildren: "./mktreferral/mktreferral.module#MktreferralModule" },
+  // { path: "MktReferral", loadChildren: "./mktreferral/mktreferral.module#MktreferralModule" },
 
   { path: "**", component: PageNotFound },
 ];
