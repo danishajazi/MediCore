@@ -29,6 +29,7 @@ export class User {
   public CreatedOn: string = null;
   public ModifiedOn: string = null;
   public IsSystemAdmin: boolean = false;
+  public PrimaryRoleName: string = null;
 
   public NeedsPasswordUpdate: boolean = true;
   //Ajay 07 Aug 19 -- landing page after login user

@@ -702,7 +702,8 @@ namespace DanpheEMR.Controllers
                 DefaultPagePath = defaultRoutePath,
                 Employee = employee,
                 LandingPageRouteId = landingPageRouteId,
-                IsSysAdmin = defRole.IsSysAdmin
+                IsSysAdmin = defRole.IsSysAdmin,
+                PrimaryRoleName = defRole != null ? defRole.RoleName : null
             };
             return results;
         }

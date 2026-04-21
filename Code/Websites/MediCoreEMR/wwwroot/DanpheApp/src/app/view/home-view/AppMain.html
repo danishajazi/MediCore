@@ -173,6 +173,10 @@
                 <span class="username username-hide-on-mobile" style="color: white;font-weight: bold;">
                   {{currentUsr.UserName}}
                 </span>
+                <span class="username-hide-on-mobile" *ngIf="currentUsr.PrimaryRoleName"
+                      style="color:#dbe9ff; font-size:12px; margin-left:6px;">
+                  ({{currentUsr.PrimaryRoleName}})
+                </span>
                 <i class="fa fa-angle-down"></i>
               </a>
               <ul class="dropdown-menu dropdown-menu-default">

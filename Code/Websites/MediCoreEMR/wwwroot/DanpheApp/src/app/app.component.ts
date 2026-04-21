@@ -226,6 +226,7 @@ export class AppComponent {
           loggedUsr.NeedsPasswordUpdate = res.Results.NeedsPasswordUpdate;
           loggedUsr.LandingPageRouteId = res.Results.LandingPageRouteId;
           loggedUsr.IsSystemAdmin = res.Results.IsSysAdmin;
+          loggedUsr.PrimaryRoleName = res.Results.PrimaryRoleName;
           this.currentUsr = loggedUsr;
           if (loggedUsr.Profile.ImageLocation == "") {
             this.employeeService.ProfilePicSrcPath = "/themes/theme-default/images/NO_Image.png";
