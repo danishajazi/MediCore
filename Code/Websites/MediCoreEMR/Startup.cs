@@ -287,7 +287,7 @@ namespace DanpheEMR
             if (bool.Parse(isDevEnv))//env.IsDevelopment build it only if it's development.
             {
                 //var provider = new PhysicalFileProvider(
-                //              Path.Combine(env.ContentRootPath, "wwwroot\\DanpheApp\\node_modules")
+                //              Path.Combine(env.ContentRootPath, "wwwroot\\MediCoreApp\\node_modules")
                 //          );
                 //var options = new FileServerOptions();
                 //options.RequestPath = "/node_modules";
